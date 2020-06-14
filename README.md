@@ -30,7 +30,7 @@ To run this project, install it locally using npm:
 
 ```bash
 $ git clone https://github.com/austinnoronha/learning_express_mongodb_handlebars.git
-$ cd learning_express
+$ cd learning_express_mongodb_handlebars
 $ npm install
 $ npm run dev
 ```
