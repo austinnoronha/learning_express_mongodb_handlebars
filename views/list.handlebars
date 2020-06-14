@@ -1,0 +1,18 @@
+<div class="row mb-4">
+    <div class="col-lg-12">
+        <h2>Courses:</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+
+        </table>
+        {{#each data}}
+        <tr>
+            <td>{{this.courseId}}</th>
+            <td>{{this.courseName}}</th>
+        </tr>
+        {{/each}}
+    </div>
+</div>

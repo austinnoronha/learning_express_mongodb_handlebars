@@ -22,10 +22,9 @@ router.get("/", (req, res) => {
     if (err) {
       return res.status(400).send("MongoDB List Error");
     } else {
-      console.log("docs", docs);
-      return res.status(200).send("MongoDB List Success");
+      return res.status(200).render("list", { data: docs });
     }
-  });
+  }).lean() /*Due to some dev dependencies in express handlebars, we need to use lean() to get JSON object*/;
 });
 
 module.exports = router;
