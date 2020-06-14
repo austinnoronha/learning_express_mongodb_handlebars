@@ -6,6 +6,13 @@
             </h1>
         </div>
 
+        {{#if message}}
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Success!</strong> {{message}}
+        </div>
+        {{/if}}
+
         <div class="panel panel-primary">
             <div class="panel-heading">List of all courses</div>
             <div class="panel-body">

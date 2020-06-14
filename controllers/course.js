@@ -46,7 +46,17 @@ router.post("/add", (req, res) => {
     if (err) {
       return res.status(400).send("Error in adding data, please try again.");
     } else {
-      return res.redirect("/course/");
+      CourseModel.find((err, docs) => {
+        if (err) {
+          return res.status(400).send("MongoDB List Error");
+        } else {
+          return res.status(200).render("list", {
+            data: docs,
+            status: "success",
+            message: `New course "${courseBody.courseName}" was added successfully!`,
+          });
+        }
+      }).lean() /*Due to some dev dependencies in express handlebars, we need to use lean() to get JSON object*/;
     }
   });
 });
