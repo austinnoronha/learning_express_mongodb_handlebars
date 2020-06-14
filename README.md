@@ -29,7 +29,7 @@ Project is created with:
 To run this project, install it locally using npm:
 
 ```bash
-$ git clone https://github.com/austinnoronha/learning_express.git
+$ git clone https://github.com/austinnoronha/learning_express_mongodb_handlebars.git
 $ cd learning_express
 $ npm install
 $ npm run dev
