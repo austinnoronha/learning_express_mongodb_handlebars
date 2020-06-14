@@ -1,4 +1,4 @@
-# Learning - NodeJs Express, Templating Engine, API
+# Learning - NodeJs Express, MongoDb, Templating Engine Handlebars, CRUD API
 
 ## Table of contents
 
@@ -10,7 +10,7 @@
 
 ## General info
 
-This is a simple learning activity wherein we will be learning about nodejs, express, templating with handlebars and creating API with CRUD
+This is a simple learning activity wherein we will be learning about nodejs, express, mongodb and templating with handlebars; and create an CRUD API for Courses
 
 ## Technologies
 
@@ -20,6 +20,9 @@ Project is created with:
 - Express
 - Nodemon
 - Express Handlebars
+- Mongoose
+- MongoDb or Atlas
+- uuid
 
 ## Setup
 
@@ -42,6 +45,7 @@ Please make sure to update tests as appropriate.
 
 - [Get Bootstrap](https://getbootstrap.com/docs/3.4/getting-started/)
 - [Mockaroo - Dummy JSON Data](http://mockaroo.com)
+- [Mongodb Compass](https://www.mongodb.com/try/download/compass)
 
 ## License
 
